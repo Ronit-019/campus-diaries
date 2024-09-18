@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Session</title>
+</head>
+<body>
+    <h1></h1>
+
+    <h3>Book Here</h3>
+
+    {% if message %}
+        <p style="color:red">{{ message }}</p>
+    {% endif %}
+
+    <form action="/perform_registration" method="post">
+        <label>Your Name</label><br>
+        <input type="text" name="user_name" required><br>
+
+        <label>E-mail</label><br>
+        <input type="email" name="user_email" required><br>
+
+        <label>Age</label><br>
+        <input type="text" name="user_age" required><br>
+
+        <label>Education Qualification</label><br>
+        <input type="text" name="user_edu" required><br>
+
+        <label>College Name</label><br>
+        <input type="text" name="user_clg" required><br>
+
+        <label>Which Year of College </label><br>
+        <input type="text" name="user_year" required><br>
+
+        <label>Day of Session</label><br>
+        <input type="text" name="user_day" required><br>
+
+        <input type="submit" value="Register">
+
+    </form>
+
+    <p>Already a member ? <a href="/">Login Here</a></p>
+
+</body>
+</html>
